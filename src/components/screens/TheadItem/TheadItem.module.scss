@@ -1,0 +1,21 @@
+.tableItem {
+	user-select: none;
+	cursor: pointer;
+	padding: 17px 25px;
+	@media (max-width: 360px) {
+		padding: 17px 15px;
+	}
+
+	> div {
+		display: flex;
+		gap: 10px;
+	}
+	.icon {
+		display: flex;
+		align-items: center;
+
+		.reverse {
+			transform: rotateX(180deg);
+		}
+	}
+}

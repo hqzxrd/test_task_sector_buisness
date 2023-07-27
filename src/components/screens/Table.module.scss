@@ -1,0 +1,62 @@
+.table {
+	.main {
+		> table {
+			border: 1px solid #e3e6ec;
+
+			> thead {
+				color: #ffffff;
+
+				> tr {
+					background-color: #474955;
+				}
+			}
+
+			tbody {
+			}
+		}
+	}
+
+	.pagination {
+		user-select: none;
+		position: relative;
+		bottom: 0;
+		margin-top: 16px;
+		display: flex;
+		justify-content: space-around;
+		font-size: 24px;
+		font-weight: 500;
+		color: #474955;
+
+		:first-child {
+			cursor: pointer;
+		}
+
+		:last-child {
+			cursor: pointer;
+		}
+
+		.pages {
+			font-weight: 700;
+			font-style: italic;
+			font-size: 18px;
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			> div {
+				text-align: center;
+				cursor: pointer;
+				padding: 0px 2px;
+			}
+
+			.active {
+				color: #7ebc3c;
+			}
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	th {
+		padding: 17px 15px;
+	}
+}

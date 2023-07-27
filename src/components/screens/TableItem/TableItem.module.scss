@@ -1,0 +1,23 @@
+.item {
+	> td {
+		word-wrap: break-word;
+		white-space: pre-wrap;
+		overflow-wrap: break-word;
+		hyphens: auto;
+		word-break: break-all;
+		padding: 10px 8px 25px 8px;
+		border: 1px solid #e3e6ec;
+	}
+	.id {
+		// max-width: 110px;
+		text-align: center;
+	}
+
+	.header {
+		width: 44.8%;
+	}
+
+	.descr {
+		width: 45%;
+	}
+}
